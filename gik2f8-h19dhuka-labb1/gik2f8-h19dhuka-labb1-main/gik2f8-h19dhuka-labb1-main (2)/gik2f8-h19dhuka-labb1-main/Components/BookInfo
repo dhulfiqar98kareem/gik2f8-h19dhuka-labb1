@@ -1,0 +1,21 @@
+
+const bookDetails = (book) => { 
+    let html = `
+    <div id="BookInfo" class="book__Info absolute inset-y right-12 rounded-lg bg-purple-100 p-4 w-1/5 top-25 ml-10 mx-auto 
+    flex flex-row text-center text-Black-400 font-semibold">
+        <img src="${book.coverImage}" alt="bild saknas för denna bok"width="90" height="70" >
+        
+        <div class="border"></div>  
+        <div class="detail__list">
+            <ul class="list">
+                <li>Title: ${book.title}</li>
+                <li>Author: ${book.author}</li>
+                <li>Pages: ${book.pages}</li>
+                <li>Release date: ${book.releaseDate}</li>
+            </ul>
+        </div> 
+    </div>
+    `;
+
+    return html;
+};
